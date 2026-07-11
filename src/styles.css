@@ -231,7 +231,24 @@ textarea:focus-visible {
 }
 
 .hero-panel {
-  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.hero-panel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: center top;
+  background: var(--surface-muted);
+}
+
+.hero-panel div {
+  padding: 0.35rem 0.35rem 0.45rem;
 }
 
 .hero-panel p,
@@ -477,5 +494,9 @@ textarea:focus-visible {
   .timeline article,
   .contact-form {
     padding: 1rem;
+  }
+
+  .hero-panel img {
+    max-height: 520px;
   }
 }

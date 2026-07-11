@@ -73,6 +73,7 @@ Aucune variable d'environnement n'est requise pour cette premiere version.
 - Fichier CV PDF a placer dans `public/`.
 - URL publique finale du site pour `og:url` dans `index.html`.
 - Image Open Graph finale si souhaitee.
+- Remplacer ou valider le portrait `public/david-mwehu-portrait.jpg`.
 - Captures d'ecran des projets :
   - Tailleur_Pro : liste, formulaire, detail, filtres.
   - IntelliEditor : fenetre principale, suggestions, corrections.

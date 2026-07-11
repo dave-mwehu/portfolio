@@ -25,10 +25,13 @@ export function Hero() {
           ))}
         </div>
       </div>
-      <aside className="hero-panel" aria-label="Resume professionnel">
-        <p>Orientation</p>
-        <strong>Logiciel utile, mobile, embarque et IoT.</strong>
-        <span>Des projets concrets, documentes et construits avec des bases maintenables.</span>
+      <aside className="hero-panel" aria-label="Portrait et resume professionnel">
+        <img src="/david-mwehu-portrait.jpg" alt="Portrait de David Mwehu Munde" />
+        <div>
+          <p>Orientation</p>
+          <strong>Logiciel utile, mobile, embarque et IoT.</strong>
+          <span>Des projets concrets, documentes et construits avec des bases maintenables.</span>
+        </div>
       </aside>
     </section>
   );
