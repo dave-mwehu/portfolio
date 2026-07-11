@@ -3,7 +3,6 @@ export type Theme = "light" | "dark";
 export type LinkItem = {
   label: string;
   href: string;
-  isPlaceholder?: boolean;
 };
 
 export type Project = {
@@ -12,7 +11,6 @@ export type Project = {
   description: string;
   features: string[];
   technologies: string[];
-  screenshotNote: string;
   githubUrl: string;
   demoUrl?: string;
   role: string;

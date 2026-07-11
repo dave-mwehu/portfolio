@@ -1,4 +1,4 @@
-import { profile, socialLinks } from "../data/profile";
+import { socialLinks } from "../data/profile";
 import { Section } from "./Section";
 
 export function Contact() {
@@ -7,8 +7,8 @@ export function Contact() {
       <div className="contact-layout">
         <div className="text-block">
           <p>
-            Les liens ci-dessous utilisent encore certaines valeurs temporaires. Ils sont regroupes dans un fichier de
-            donnees pour pouvoir les remplacer facilement avant publication finale.
+            Disponible pour echanger autour de projets logiciels, d'applications mobiles, de prototypes connectes et
+            d'opportunites de collaboration.
           </p>
           <div className="contact-links">
             {socialLinks.map((link) => (
@@ -18,20 +18,10 @@ export function Contact() {
             ))}
           </div>
         </div>
-        <form className="contact-form" action={`mailto:${profile.email}`} method="post" encType="text/plain">
-          <label>
-            Nom
-            <input type="text" name="name" autoComplete="name" />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows={5} />
-          </label>
-          <button className="button primary" type="submit">
-            Ouvrir l'e-mail
-          </button>
-          <p>Formulaire facultatif, sans backend ni stockage de donnees.</p>
-        </form>
+        <aside className="contact-note" aria-label="Contact direct">
+          <h3>Contact direct</h3>
+          <p>Les echanges se font pour cette premiere version via les liens professionnels affiches.</p>
+        </aside>
       </div>
     </Section>
   );

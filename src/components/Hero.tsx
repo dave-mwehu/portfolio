@@ -12,15 +12,16 @@ export function Hero() {
           <a className="button primary" href="#projects">
             Voir les projets
           </a>
-          <a className="button secondary" href={profile.cvUrl}>
-            CV temporaire
-          </a>
+          {profile.cvUrl ? (
+            <a className="button secondary" href={profile.cvUrl}>
+              CV
+            </a>
+          ) : null}
         </div>
-        <div className="hero-links" aria-label="Liens professionnels temporaires">
+        <div className="hero-links" aria-label="Liens professionnels">
           {socialLinks.map((link) => (
             <a key={link.label} href={link.href} target={link.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer">
               {link.label}
-              {link.isPlaceholder ? <span>placeholder</span> : null}
             </a>
           ))}
         </div>

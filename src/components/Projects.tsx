@@ -25,9 +25,8 @@ export function Projects() {
               </div>
             </div>
             <div className="project-side">
-              <div className="screenshot-slot" aria-label={`Emplacement des captures pour ${project.name}`}>
-                <span>Captures prevues</span>
-                <p>{project.screenshotNote}</p>
+              <div className="screenshot-slot" aria-hidden="true">
+                <span>{project.name.slice(0, 2).toUpperCase()}</span>
               </div>
               <div className="tech-list" aria-label={`Technologies utilisees pour ${project.name}`}>
                 {project.technologies.map((tech) => (

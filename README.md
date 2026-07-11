@@ -68,8 +68,7 @@ Aucune variable d'environnement n'est requise pour cette premiere version.
 
 ## Informations a remplacer avant publication finale
 
-- URL LinkedIn definitive.
-- Adresse e-mail professionnelle definitive.
+- Adresse e-mail professionnelle si un contact direct doit etre affiche.
 - Fichier CV PDF a placer dans `public/`.
 - URL publique finale du site pour `og:url` dans `index.html`.
 - Image Open Graph finale si souhaitee.
@@ -85,5 +84,5 @@ Aucune variable d'environnement n'est requise pour cette premiere version.
 ## Notes de securite
 
 - Aucun secret ni cle API n'est stocke dans le depot.
-- Les liens temporaires sont marques dans `src/data/profile.ts`.
-- Le formulaire de contact utilise `mailto:` et ne depend d'aucun backend.
+- Le lien LinkedIn est configure dans `src/data/profile.ts`.
+- Aucun formulaire n'envoie de donnees et aucun backend n'est requis.

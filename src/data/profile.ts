@@ -4,16 +4,15 @@ export const profile = {
   name: "David Mwehu Munde",
   title: "Software Engineering Student",
   subtitle: "Full-Stack Developer | Mobile | Embedded Systems | IoT",
-  email: "email-temporaire@example.com",
+  email: null,
   github: "https://github.com/dave-mwehu",
-  linkedin: "https://www.linkedin.com/in/linkedin-temporaire-david-mwehu",
-  cvUrl: "/cv-david-mwehu-temporaire.pdf",
+  linkedin: "https://www.linkedin.com/in/dave-munde-4166442aa",
+  cvUrl: null,
 };
 
 export const socialLinks: LinkItem[] = [
   { label: "GitHub", href: profile.github },
-  { label: "LinkedIn temporaire", href: profile.linkedin, isPlaceholder: true },
-  { label: "E-mail temporaire", href: `mailto:${profile.email}`, isPlaceholder: true },
+  { label: "LinkedIn", href: profile.linkedin },
 ];
 
 export const skillGroups: SkillGroup[] = [
