@@ -69,7 +69,6 @@ Aucune variable d'environnement n'est requise pour cette premiere version.
 ## Informations a remplacer avant publication finale
 
 - Adresse e-mail professionnelle si un contact direct doit etre affiche.
-- Fichier CV PDF a placer dans `public/`.
 - URL publique finale du site pour `og:url` dans `index.html`.
 - Image Open Graph finale si souhaitee.
 - Remplacer ou valider le portrait `public/david-mwehu-portrait.jpg`.
