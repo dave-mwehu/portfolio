@@ -3,7 +3,6 @@ import type { Project } from "../types";
 export const projects: Project[] = [
   {
     name: "Tailleur_Pro",
-    shortName: "Tailleur Pro",
     category: "Application Android",
     problem:
       "Les ateliers de couture suivent souvent commandes, mesures et délais dans des cahiers ou des messages dispersés.",
@@ -23,7 +22,6 @@ export const projects: Project[] = [
   },
   {
     name: "IntelliEditor",
-    shortName: "IntelliEditor",
     category: "Éditeur intelligent hors ligne",
     problem:
       "Les fonctions d'assistance des éditeurs modernes dépendent souvent du cloud, ce qui limite l'usage hors ligne et la maîtrise locale.",
@@ -43,7 +41,6 @@ export const projects: Project[] = [
   },
   {
     name: "Supervision intelligente du réseau BT",
-    shortName: "Supervision BT",
     category: "Système IoT & supervision",
     problem:
       "La supervision basse tension manque de visibilité en temps réel sur les mesures, anomalies et actions de délestage.",
@@ -64,7 +61,6 @@ export const projects: Project[] = [
   },
   {
     name: "Day_of_succes",
-    shortName: "Day of Success",
     category: "Application web de gestion",
     problem:
       "Le suivi de cotisations hebdomadaires devient difficile quand dépôts, dettes, cycles et notifications sont dispersés.",

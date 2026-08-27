@@ -6,8 +6,8 @@ export function Education() {
       id="education"
       index="04"
       eyebrow="Parcours"
-      title="Une formation qui relie logiciel et systèmes."
-      intro="Le génie logiciel structure ma manière de concevoir. L'électromécanique m'aide à comprendre le contexte physique dans lequel certains produits doivent fonctionner."
+      title="Un parcours ancré dans le génie logiciel."
+      intro="Le génie logiciel structure ma manière de concevoir. Les projets connectés complètent ce parcours par une expérience concrète des échanges entre logiciel, données et matériel."
     >
       <div className="journey-layout">
         <div className="timeline">
@@ -21,11 +21,11 @@ export function Education() {
           </article>
           <article>
             <div className="timeline-marker" aria-hidden="true" />
-            <span>Socle technique complémentaire</span>
-            <h3>Électromécanique</h3>
+            <span>Projets appliqués</span>
+            <h3>Systèmes embarqués &amp; IoT</h3>
             <p>
-              Une base pour comprendre les systèmes physiques, les capteurs, les actionneurs et les contraintes des
-              projets embarqués ou IoT.
+              Expérience acquise à travers un prototype de supervision : maquette Arduino, MQTT, API FastAPI,
+              dashboard temps réel et scénarios de délestage.
             </p>
           </article>
         </div>

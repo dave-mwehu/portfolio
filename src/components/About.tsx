@@ -12,12 +12,12 @@ export function About() {
       <div className="about-layout">
         <div className="about-statement">
           <p>
-            Mon parcours en génie logiciel se nourrit d'une culture électromécanique et d'un intérêt marqué pour les
-            systèmes qui interagissent avec leur environnement.
+            Mes projets de supervision IoT et de prototypes connectés m'ont appris à relier logiciel, données et
+            contraintes d'un système physique, sans perdre de vue l'usage final.
           </p>
           <p>
-            Cette double lecture me permet d'aborder aussi bien une application de gestion qu'un éditeur hors ligne ou
-            un prototype connecté, avec le même objectif : produire une solution utile, lisible et maintenable.
+            J'aborde ainsi une application de gestion, un éditeur hors ligne ou un prototype connecté avec le même
+            objectif : produire une solution utile, lisible et maintenable.
           </p>
         </div>
         <div className="principle-list" aria-label="Principes de travail">

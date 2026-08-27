@@ -7,7 +7,6 @@ export type LinkItem = {
 
 export type Project = {
   name: string;
-  shortName: string;
   category: string;
   problem: string;
   description: string;

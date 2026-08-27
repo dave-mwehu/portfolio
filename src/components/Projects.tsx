@@ -14,7 +14,7 @@ export function Projects() {
       <div className="project-list">
         {projects.map((project, index) => (
           <article className="project-card" key={project.name}>
-            <div className="project-visual" aria-label={`Architecture simplifiée du projet ${project.shortName}`}>
+            <div className="project-visual" aria-label={`Architecture simplifiée du projet ${project.name}`}>
               <div className="project-visual-head">
                 <span>{String(index + 1).padStart(2, "0")}</span>
                 <p>{project.category}</p>
@@ -27,32 +27,39 @@ export function Projects() {
                   </div>
                 ))}
               </div>
-              <p className="project-visual-name">{project.shortName}</p>
             </div>
             <div className="project-content">
               <div className="project-overview">
-                <p className="project-label">Le problème</p>
-                <p className="project-problem">{project.problem}</p>
-                <h3>{project.shortName}</h3>
-                <p className="project-description">{project.description}</p>
+                <h3>{project.name}</h3>
+                <div className="project-narrative">
+                  <p className="project-label">Problème</p>
+                  <p className="project-problem">{project.problem}</p>
+                </div>
+                <div className="project-narrative">
+                  <p className="project-label">Solution</p>
+                  <p className="project-description">{project.description}</p>
+                </div>
                 <div className="project-role">
-                  <span>Ma contribution</span>
+                  <span>Contribution</span>
                   <p>{project.role}</p>
                 </div>
               </div>
               <div className="project-details">
                 <div>
-                  <h4>Ce que couvre le projet</h4>
-                  <ul className="feature-list">
-                  {project.features.map((feature) => (
-                    <li key={feature}>{feature}</li>
-                  ))}
-                  </ul>
+                  <h4>Technologies</h4>
+                  <div className="tech-list" aria-label={`Technologies utilisées pour ${project.name}`}>
+                    {project.technologies.map((tech) => (
+                      <span key={tech}>{tech}</span>
+                    ))}
+                  </div>
                 </div>
-                <div className="tech-list" aria-label={`Technologies utilisées pour ${project.shortName}`}>
-                  {project.technologies.map((tech) => (
-                    <span key={tech}>{tech}</span>
-                  ))}
+                <div>
+                  <h4>Fonctionnalités principales</h4>
+                  <ul className="feature-list">
+                    {project.features.map((feature) => (
+                      <li key={feature}>{feature}</li>
+                    ))}
+                  </ul>
                 </div>
                 <div className="project-links">
                   <a href={project.githubUrl} target="_blank" rel="noreferrer">

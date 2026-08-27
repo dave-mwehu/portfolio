@@ -29,11 +29,14 @@ export function Contact() {
         </div>
         <aside className="contact-note linkedin-profile-card" aria-label="Profil LinkedIn">
           <div className="linkedin-card-heading">
-            <span>Profil professionnel</span>
-            <h3>Retrouvez-moi sur LinkedIn</h3>
-            <p>Parcours, compétences et prochaines actualités professionnelles.</p>
+            <span>Présence professionnelle</span>
+            <h3>Profil LinkedIn</h3>
+            <p>Le lien LinkedIn est disponible parmi mes coordonnées professionnelles.</p>
           </div>
-          <LinkedInProfileBadge />
+          <details className="linkedin-official-badge">
+            <summary>Afficher le badge officiel LinkedIn</summary>
+            <LinkedInProfileBadge />
+          </details>
         </aside>
       </div>
     </Section>
