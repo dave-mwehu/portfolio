@@ -356,8 +356,13 @@ img {
 }
 
 .hero-actions {
-  margin-top: 2.2rem;
-}
+    margin-top: 2.2rem;
+  }
+
+  .hero-actions:has(.cv-selector.is-open) {
+    position: relative;
+    z-index: 3;
+  }
 
 .button {
   display: inline-flex;
@@ -412,8 +417,9 @@ img {
 }
 
 .cv-selector {
-  position: relative;
-}
+    position: relative;
+    z-index: 20;
+  }
 
 .cv-selector > .button {
   appearance: none;
@@ -426,26 +432,26 @@ img {
 }
 
 .cv-menu {
-  position: absolute;
-  z-index: 12;
-  top: calc(100% + 0.7rem);
-  right: 0;
-  width: min(22rem, calc(100vw - 3rem));
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-md);
-  padding: 0.65rem;
-  background: var(--bg-elevated);
-  box-shadow: var(--shadow-lg);
-}
+    position: absolute;
+    z-index: 30;
+    top: calc(100% + 0.55rem);
+    left: 0;
+    width: min(24rem, calc(100vw - 3rem));
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-md);
+    padding: 0.5rem;
+    background: var(--surface);
+    box-shadow: 0 18px 42px rgba(12, 29, 25, 0.2);
+  }
 
 .cv-menu-group {
-  display: grid;
-  gap: 0.2rem;
-}
+    display: grid;
+    gap: 0.1rem;
+  }
 
 .cv-menu-group > p {
-  margin: 0.15rem 0 0.35rem;
-  padding: 0 0.45rem;
+    margin: 0.1rem 0 0.25rem;
+    padding: 0 0.35rem;
   color: var(--accent-strong);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.62rem;
@@ -460,9 +466,9 @@ img {
   justify-content: space-between;
   gap: 1rem;
   border-radius: var(--radius-sm);
-  padding: 0.7rem 0.75rem;
-  color: var(--text);
-  font-size: 0.82rem;
+    padding: 0.55rem 0.65rem;
+    color: var(--text);
+    font-size: 0.8rem;
   font-weight: 760;
   text-decoration: none;
   transition: background-color 160ms ease, color 160ms ease;
@@ -475,16 +481,16 @@ img {
 }
 
 .cv-menu-group a small {
-  color: var(--muted);
-  font-size: 0.68rem;
+    color: var(--muted);
+    font-size: 0.62rem;
   font-weight: 650;
   text-align: right;
 }
 
 .cv-menu-group--secondary {
-  margin-top: 0.55rem;
-  border-top: 1px solid var(--line);
-  padding-top: 0.7rem;
+    margin-top: 0.4rem;
+    border-top: 1px solid var(--line);
+    padding-top: 0.5rem;
 }
 
 .hero-links {
@@ -1693,13 +1699,13 @@ img {
     width: 100%;
   }
 
-  .cv-menu {
-    position: relative;
-    top: auto;
-    right: auto;
-    width: 100%;
-    margin-top: 0.65rem;
-  }
+    .cv-menu {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 100%;
+      margin-top: 0.55rem;
+    }
 
   .hero-proof {
     gap: 0;

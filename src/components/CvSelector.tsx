@@ -26,9 +26,12 @@ function CvDocumentLink({ label, detail, href }: DocumentLink) {
 
 export function CvSelector() {
   const [isOpen, setIsOpen] = useState(false);
+  const selectorRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    if (!isOpen) return;
+
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setIsOpen(false);
@@ -36,12 +39,22 @@ export function CvSelector() {
       }
     };
 
+    const closeOnOutsideClick = (event: PointerEvent) => {
+      if (!selectorRef.current?.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
     window.addEventListener("keydown", closeOnEscape);
-    return () => window.removeEventListener("keydown", closeOnEscape);
-  }, []);
+    window.addEventListener("pointerdown", closeOnOutsideClick);
+    return () => {
+      window.removeEventListener("keydown", closeOnEscape);
+      window.removeEventListener("pointerdown", closeOnOutsideClick);
+    };
+  }, [isOpen]);
 
   return (
-    <div className={`cv-selector${isOpen ? " is-open" : ""}`}>
+    <div className={`cv-selector${isOpen ? " is-open" : ""}`} ref={selectorRef}>
       <button
         className="button secondary"
         type="button"
