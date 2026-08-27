@@ -1,45 +1,46 @@
-# Portfolio - David Mwehu Munde
+# Portfolio — David Mwehu Munde
 
-Portfolio professionnel de David Mwehu Munde, etudiant en genie logiciel, avec une ouverture vers le mobile, les systemes embarques, l'IoT et l'electromecanique.
+Portfolio personnel de [David Mwehu Munde](https://dave-mwehu.vercel.app/), étudiant en génie logiciel orienté développement mobile, backend, systèmes embarqués et IoT.
 
-## Objectif
+## Direction
 
-Presenter un profil developpeur sobre et credible, avec une selection de projets reels :
+Le site présente quatre projets réels à travers une lecture simple : le problème, la solution, la contribution, le périmètre fonctionnel et les choix techniques.
 
-- Tailleur_Pro
+- Tailleur Pro
 - IntelliEditor
-- Systeme de supervision intelligente du reseau electrique basse tension
-- Day_of_succes
+- Système de supervision intelligente du réseau électrique basse tension
+- Day of Success
+
+## Expérience proposée
+
+- Interface responsive du mobile au grand écran
+- Thèmes clair et sombre persistants
+- Navigation accessible avec menu mobile
+- Badge de profil LinkedIn officiel avec solution de repli
+- Micro-interactions respectant `prefers-reduced-motion`
+- Métadonnées Open Graph, favicon et aperçu social dédiés
+- Police variable Manrope servie localement
 
 ## Stack
 
-- React
-- Vite
+- React 19
+- Vite 7
 - TypeScript
-- CSS modulaire par composants et variables de theme
-- Compatible Vercel
+- CSS natif avec variables de thème et composants visuels réutilisables
+- Déploiement Vercel
 
-## Installation
+## Développement local
 
 ```bash
 npm install
-```
-
-## Developpement
-
-```bash
 npm run dev
 ```
 
-## Build de production
+## Vérifications
 
 ```bash
+npm run check
 npm run build
-```
-
-## Apercu du build
-
-```bash
 npm run preview
 ```
 
@@ -47,41 +48,28 @@ npm run preview
 
 ```text
 src/
-|-- components/       # Sections et composants reutilisables
-|-- data/             # Donnees du profil, competences et projets
-|-- hooks/            # Theme clair/sombre
+|-- components/       # Sections, navigation et composants visuels
+|-- data/             # Profil, compétences et projets
+|-- hooks/            # Gestion du thème clair/sombre
 |-- App.tsx           # Composition de la page
-|-- main.tsx          # Point d'entree React
-`-- styles.css        # Design responsive et variables de theme
+|-- main.tsx          # Point d'entrée React
+`-- styles.css        # Système visuel et responsive
 ```
 
-## Deploiement Vercel
+Les informations personnelles et les technologies affichées sont centralisées dans `src/data/profile.ts`. Les projets sont décrits dans `src/data/projects.ts`.
 
-1. Importer le depot GitHub dans Vercel.
-2. Garder les parametres par defaut Vite :
-   - Framework Preset : `Vite`
-   - Build Command : `npm run build`
-   - Output Directory : `dist`
-3. Lancer le deploiement.
+## Déploiement Vercel
 
-Aucune variable d'environnement n'est requise pour cette premiere version.
+Le projet utilise la configuration Vite standard :
 
-## Informations a remplacer avant publication finale
+- Build Command : `npm run build`
+- Output Directory : `dist`
+- Node.js : `22.x`
 
-- Adresse e-mail professionnelle si un contact direct doit etre affiche.
-- URL publique finale du site pour `og:url` dans `index.html`.
-- Image Open Graph finale si souhaitee.
-- Remplacer ou valider le portrait `public/david-mwehu-portrait.jpg`.
-- Captures d'ecran des projets :
-  - Tailleur_Pro : liste, formulaire, detail, filtres.
-  - IntelliEditor : fenetre principale, suggestions, corrections.
-  - Supervision BT : dashboard, carte, journal SCADA, maquette Arduino.
-  - Day_of_succes : tableau de bord, membres, vue membre.
-- Dates et noms exacts des formations.
-- Liens de demonstration si des deployments publics existent.
+Aucune variable d'environnement n'est requise.
 
-## Notes de securite
+## Sécurité
 
-- Aucun secret ni cle API n'est stocke dans le depot.
-- Le lien LinkedIn est configure dans `src/data/profile.ts`.
-- Aucun formulaire n'envoie de donnees et aucun backend n'est requis.
+- Aucun secret ni clé API n'est stocké dans le dépôt.
+- Aucun formulaire ne transmet de données.
+- Les liens externes ouverts dans un nouvel onglet utilisent `noreferrer`.

@@ -1,8 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#f8fafc"/>
-  <rect x="80" y="80" width="1040" height="470" rx="28" fill="#0f172a"/>
-  <text x="130" y="235" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#f8fafc">David Mwehu Munde</text>
-  <text x="132" y="315" font-family="Arial, sans-serif" font-size="34" fill="#bae6fd">Software Engineering Student</text>
-  <text x="132" y="380" font-family="Arial, sans-serif" font-size="30" fill="#cbd5e1">Full-Stack Developer | Mobile | Embedded Systems | IoT</text>
-  <rect x="132" y="440" width="290" height="8" rx="4" fill="#38bdf8"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#27423C" stroke-width="1" opacity=".55"/>
+    </pattern>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1010 100) rotate(135) scale(520)">
+      <stop stop-color="#4BD8C2" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#4BD8C2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#07110F"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="1026" cy="116" r="66" fill="none" stroke="#4BD8C2" stroke-width="2"/>
+  <circle cx="1026" cy="116" r="42" fill="#4BD8C2" opacity=".12"/>
+  <text x="84" y="102" font-family="Consolas, monospace" font-size="19" font-weight="700" letter-spacing="2" fill="#4BD8C2">SOFTWARE ENGINEERING / PORTFOLIO</text>
+  <text x="80" y="266" font-family="Arial, sans-serif" font-size="84" font-weight="700" letter-spacing="-4" fill="#EFFAF7">David Mwehu</text>
+  <text x="80" y="352" font-family="Arial, sans-serif" font-size="84" font-weight="700" letter-spacing="-4" fill="#4BD8C2">Munde.</text>
+  <text x="84" y="430" font-family="Arial, sans-serif" font-size="29" fill="#C1D3CE">Des logiciels utiles, du mobile aux systèmes connectés.</text>
+  <line x1="84" y1="500" x2="1116" y2="500" stroke="#365149"/>
+  <text x="84" y="548" font-family="Consolas, monospace" font-size="19" fill="#91A9A3">MOBILE</text>
+  <circle cx="194" cy="541" r="4" fill="#4BD8C2"/>
+  <text x="220" y="548" font-family="Consolas, monospace" font-size="19" fill="#91A9A3">BACKEND</text>
+  <circle cx="344" cy="541" r="4" fill="#4BD8C2"/>
+  <text x="370" y="548" font-family="Consolas, monospace" font-size="19" fill="#91A9A3">EMBEDDED</text>
+  <circle cx="520" cy="541" r="4" fill="#4BD8C2"/>
+  <text x="546" y="548" font-family="Consolas, monospace" font-size="19" fill="#91A9A3">IOT</text>
+  <text x="1116" y="548" text-anchor="end" font-family="Consolas, monospace" font-size="18" fill="#4BD8C2">DM / 2026</text>
 </svg>

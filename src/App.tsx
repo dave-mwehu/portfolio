@@ -13,8 +13,11 @@ export default function App() {
 
   return (
     <div className="app-shell">
+      <a className="skip-link" href="#main-content">
+        Aller au contenu
+      </a>
       <Header theme={theme} onToggleTheme={toggleTheme} />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <Skills />
