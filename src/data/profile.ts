@@ -7,6 +7,7 @@ export const profile = {
   email: null,
   github: "https://github.com/dave-mwehu",
   linkedin: "https://www.linkedin.com/in/dave-munde-4166442aa",
+  linkedinVanity: "dave-munde-4166442aa",
   cvUrl: "/cv-david-mwehu-munde.pdf",
 };
 

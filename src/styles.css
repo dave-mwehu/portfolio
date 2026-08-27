@@ -443,6 +443,59 @@ textarea:focus-visible {
   line-height: 1.7;
 }
 
+.linkedin-profile-card {
+  min-width: 0;
+}
+
+.linkedin-profile-badge {
+  margin-top: 1.25rem;
+}
+
+.linkedin-badge-variants {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.linkedin-badge-variant {
+  max-width: 100%;
+}
+
+.linkedin-badge-variant iframe {
+  max-width: 100%;
+}
+
+.linkedin-badge-variant .badge-base__link {
+  display: none;
+}
+
+.linkedin-badge-variant--dark,
+:root[data-theme="dark"] .linkedin-badge-variant--light {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+:root[data-theme="dark"] .linkedin-badge-variant--dark {
+  position: static;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.linkedin-badge-fallback {
+  display: inline-flex;
+  margin-top: 0.85rem;
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.linkedin-badge-fallback:hover {
+  text-decoration: underline;
+}
+
 .site-footer {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;

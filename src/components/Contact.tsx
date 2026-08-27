@@ -1,4 +1,5 @@
 import { socialLinks } from "../data/profile";
+import { LinkedInProfileBadge } from "./LinkedInProfileBadge";
 import { Section } from "./Section";
 
 export function Contact() {
@@ -18,9 +19,10 @@ export function Contact() {
             ))}
           </div>
         </div>
-        <aside className="contact-note" aria-label="Contact direct">
-          <h3>Contact direct</h3>
-          <p>Les echanges se font pour cette premiere version via les liens professionnels affiches.</p>
+        <aside className="contact-note linkedin-profile-card" aria-label="Profil LinkedIn">
+          <h3>Profil LinkedIn</h3>
+          <p>Retrouvez mon parcours, mes competences et mes prochaines actualites professionnelles.</p>
+          <LinkedInProfileBadge />
         </aside>
       </div>
     </Section>
