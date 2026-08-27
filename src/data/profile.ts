@@ -10,7 +10,6 @@ export const profile = {
   github: "https://github.com/dave-mwehu",
   linkedin: "https://www.linkedin.com/in/dave-munde/",
   linkedinVanity: "dave-munde-4166442aa",
-  cvUrl: "/cv-david-mwehu-munde.pdf",
 };
 
 export const socialLinks: LinkItem[] = [
