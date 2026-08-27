@@ -1,5 +1,6 @@
 import { profile, socialLinks } from "../data/profile";
-import { ArrowUpRightIcon, DownloadIcon } from "./Icons";
+import { ArrowUpRightIcon } from "./Icons";
+import { CvSelector } from "./CvSelector";
 
 export function Hero() {
   return (
@@ -19,12 +20,7 @@ export function Hero() {
             Explorer mes projets
             <ArrowUpRightIcon />
           </a>
-          {profile.cvUrl ? (
-            <a className="button secondary" href={profile.cvUrl} target="_blank" rel="noreferrer">
-              Consulter mon CV
-              <DownloadIcon />
-            </a>
-          ) : null}
+          <CvSelector />
         </div>
         <div className="hero-links" aria-label="Liens professionnels">
           {socialLinks.map((link) => (
